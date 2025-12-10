@@ -1,0 +1,205 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "mylesowens",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html",
+    "href": "STYLE_GUIDE.html",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": "This website represents Myles Owens as an economics professional, data storyteller, and policy researcher. The design should feel: - Professional - Suitable for academic and consulting audiences - Clean - Minimalist with purposeful whitespace - Dynamic - Subtle animations that engage without distracting - Data-Forward - Visual elements that hint at quantitative expertise\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nColor Name\nHex Code\nRGB\nUsage\n\n\n\n\nBright Blue\n#007BFF\nrgb(0, 123, 255)\nHero name, primary buttons, links, accents\n\n\nDark Blue\n#0056b3\nrgb(0, 86, 179)\nHover states, emphasis\n\n\nLight Blue\n#e7f1ff\nrgb(231, 241, 255)\nSubtle backgrounds\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nColor Name\nHex Code\nRGB\nUsage\n\n\n\n\nBlack\n#1a1a1a\nrgb(26, 26, 26)\nHeadings\n\n\nDark Gray\n#333333\nrgb(51, 51, 51)\nBody text\n\n\nMedium Gray\n#666666\nrgb(102, 102, 102)\nSecondary text\n\n\nLight Gray\n#f5f5f5\nrgb(245, 245, 245)\nSection backgrounds\n\n\nWhite\n#FFFFFF\nrgb(255, 255, 255)\nMain background\n\n\n\n\n\n\n\n\n\nColor Name\nHex Code\nOpacity\nUsage\n\n\n\n\nFaint Blue\n#007BFF\n10-15%\nScrolling buzzwords\n\n\nFaint Gray\n#333333\n8-12%\nScrolling equations\n\n\n\n\n\n\n\n\n\n\n/* Primary font - clean, professional */\nfont-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;\n\n/* Code/equations font */\nfont-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;\n\n\n\n\n\n\nElement\nSize\nWeight\nLine Height\n\n\n\n\nHero Name\n4rem (64px)\n700 (Bold)\n1.1\n\n\nH1\n2.5rem (40px)\n600 (Semi-bold)\n1.2\n\n\nH2\n2rem (32px)\n600 (Semi-bold)\n1.3\n\n\nH3\n1.5rem (24px)\n500 (Medium)\n1.4\n\n\nBody\n1rem (16px)\n400 (Regular)\n1.6\n\n\nSmall\n0.875rem (14px)\n400 (Regular)\n1.5\n\n\nScrolling BG\n1.25rem (20px)\n300 (Light)\n1.0\n\n\n\n\n\n\n\n\n\n\n\nHeight: 100vh (full viewport) or min-height 600px\nDisplay: Flexbox, centered horizontally and vertically\nPosition: Relative (for background layer)\n\n\n\n\n.hero-name {\n  font-size: 4rem;\n  font-weight: 700;\n  color: #007BFF;\n  text-align: center;\n  z-index: 10;\n  position: relative;\n}\n\n\n\nThe hero section features economics/econometrics terms and equations scrolling horizontally in faint colors behind the main content.\nBuzzwords to include: - ECONOMETRICS - DATA ANALYSIS - STATISTICAL MODELING - TIME SERIES ANALYSIS - REGRESSION - ECONOMIC POLICY - MARKET ANALYSIS - VISUALIZATION - POLICY RESEARCH - ECONOMIC THEORY - QUANTITATIVE METHODS - R&D - LATEX - EXCEL - VEGA-LITE\nEquations to include: - Y = α + βX + ε - E[Y|X] = β₀ + β₁X - ΔY/ΔX = β - R² = 1 - SSres/SStot - σ² = Σ(xᵢ - μ)²/n - GDP = C + I + G + (X-M)\nAnimation CSS:\n.scrolling-row {\n  display: flex;\n  white-space: nowrap;\n  animation: scroll-left 30s linear infinite;\n}\n\n.scrolling-row.reverse {\n  animation: scroll-right 25s linear infinite;\n}\n\n@keyframes scroll-left {\n  0% { transform: translateX(0); }\n  100% { transform: translateX(-50%); }\n}\n\n@keyframes scroll-right {\n  0% { transform: translateX(-50%); }\n  100% { transform: translateX(0); }\n}\n\n.scrolling-text {\n  color: rgba(0, 123, 255, 0.12);\n  font-size: 1.25rem;\n  font-weight: 300;\n  padding: 0 2rem;\n  text-transform: uppercase;\n  letter-spacing: 0.1em;\n}\n\n\n\n\n\n\n\n\nWidth: 100%\nPadding: 4rem 2rem\nBackground: #f5f5f5 (light gray)\nOverflow: Hidden (with horizontal scroll for cards)\n\n\n\n\n.substack-card {\n  min-width: 300px;\n  max-width: 350px;\n  background: #FFFFFF;\n  border-radius: 8px;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);\n  padding: 1.5rem;\n  margin-right: 1.5rem;\n  transition: transform 0.2s ease, box-shadow 0.2s ease;\n}\n\n.substack-card:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);\n}\n\n\n\n\nTitle: H3, #1a1a1a, 1.25rem, font-weight 600\nDate: Small text, #666666, 0.875rem\nPreview: Body text, #333333, 2-3 lines max with ellipsis\nRead More Link: #007BFF, hover underline\n\n\n\n\n\n\n\n\n\nTwo-column on desktop: Text left (60%), Image right (40%)\nSingle column on mobile: Image on top, text below\nMax-width: 1200px\nPadding: 5rem 2rem\n\n\n\n\n.about-image {\n  border-radius: 8px;\n  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);\n  max-width: 100%;\n  height: auto;\n}\n\n\n\n\nDisplay logos of LSE, Bank for International Settlements, Howard University, etc.\nGrid layout: 3-4 columns on desktop\nGrayscale by default, color on hover (optional)\n\n\n\n\n\n\n\n\n.projects-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\n  gap: 2rem;\n  padding: 2rem;\n}\n\n\n\n.project-card {\n  background: #FFFFFF;\n  border-radius: 12px;\n  overflow: hidden;\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);\n  transition: transform 0.3s ease;\n}\n\n.project-card:hover {\n  transform: translateY(-8px);\n}\n\n.project-card-image {\n  width: 100%;\n  height: 200px;\n  object-fit: cover;\n}\n\n.project-card-content {\n  padding: 1.5rem;\n}\n\n\n\n\n\n\n\n.btn-primary {\n  background-color: #007BFF;\n  color: #FFFFFF;\n  padding: 0.75rem 1.5rem;\n  border-radius: 6px;\n  font-weight: 500;\n  border: none;\n  cursor: pointer;\n  transition: background-color 0.2s ease;\n}\n\n.btn-primary:hover {\n  background-color: #0056b3;\n}\n\n\n\na {\n  color: #007BFF;\n  text-decoration: none;\n  transition: color 0.2s ease;\n}\n\na:hover {\n  color: #0056b3;\n  text-decoration: underline;\n}\n\n\n\n\n\n\n\n.social-icon {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  width: 44px;\n  height: 44px;\n  border-radius: 50%;\n  background-color: #007BFF;\n  color: #FFFFFF;\n  margin: 0 0.5rem;\n  transition: background-color 0.2s ease, transform 0.2s ease;\n}\n\n.social-icon:hover {\n  background-color: #0056b3;\n  transform: scale(1.1);\n}\n\n\n\n\n\nUse consistent spacing based on 8px increments:\n\n\n\nName\nValue\nUsage\n\n\n\n\nxs\n4px\nTight spacing\n\n\nsm\n8px\nCompact elements\n\n\nmd\n16px\nDefault spacing\n\n\nlg\n24px\nSection padding\n\n\nxl\n32px\nLarge gaps\n\n\n2xl\n48px\nSection margins\n\n\n3xl\n64px\nMajor sections\n\n\n\n\n\n\n\n/* Mobile first approach */\n/* Small devices (phones) */\n@media (min-width: 576px) { }\n\n/* Medium devices (tablets) */\n@media (min-width: 768px) { }\n\n/* Large devices (desktops) */\n@media (min-width: 992px) { }\n\n/* Extra large devices */\n@media (min-width: 1200px) { }\n\n\n\n\n\n\nimages/\n├── index_images/\n│   ├── portrait.png      # Main profile photo (recommended: 800x800px)\n│   └── hero-bg.png       # Optional hero background\n├── project_images/\n│   ├── project-1.png     # Project thumbnails (recommended: 600x400px)\n│   └── project-2.png\n└── logos/\n    ├── lse.png           # Institution logos\n    ├── bis.png\n    └── substack.png\n\n\n\n\nProfile Photo: 800x800px minimum, PNG or JPG, &lt; 200KB\nProject Thumbnails: 600x400px (3:2 ratio), PNG or JPG, &lt; 150KB\nLogos: PNG with transparency, max height 60px for display\n\n\n\n\n\n\n\nMaintain color contrast ratio of at least 4.5:1 for text\nAll images must have descriptive alt text\nInteractive elements must have :focus states\nUse semantic HTML elements\nEnsure keyboard navigation works throughout\n\n\n\n\n\n\nKeep animations subtle and purposeful\nDefault duration: 200-300ms for UI transitions\nUse ease or ease-out timing functions\nScrolling background: slower (20-30s) for ambient effect\nRespect prefers-reduced-motion media query"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#brand-identity",
+    "href": "STYLE_GUIDE.html#brand-identity",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": "This website represents Myles Owens as an economics professional, data storyteller, and policy researcher. The design should feel: - Professional - Suitable for academic and consulting audiences - Clean - Minimalist with purposeful whitespace - Dynamic - Subtle animations that engage without distracting - Data-Forward - Visual elements that hint at quantitative expertise"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#color-palette",
+    "href": "STYLE_GUIDE.html#color-palette",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": "Color Name\nHex Code\nRGB\nUsage\n\n\n\n\nBright Blue\n#007BFF\nrgb(0, 123, 255)\nHero name, primary buttons, links, accents\n\n\nDark Blue\n#0056b3\nrgb(0, 86, 179)\nHover states, emphasis\n\n\nLight Blue\n#e7f1ff\nrgb(231, 241, 255)\nSubtle backgrounds\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nColor Name\nHex Code\nRGB\nUsage\n\n\n\n\nBlack\n#1a1a1a\nrgb(26, 26, 26)\nHeadings\n\n\nDark Gray\n#333333\nrgb(51, 51, 51)\nBody text\n\n\nMedium Gray\n#666666\nrgb(102, 102, 102)\nSecondary text\n\n\nLight Gray\n#f5f5f5\nrgb(245, 245, 245)\nSection backgrounds\n\n\nWhite\n#FFFFFF\nrgb(255, 255, 255)\nMain background\n\n\n\n\n\n\n\n\n\nColor Name\nHex Code\nOpacity\nUsage\n\n\n\n\nFaint Blue\n#007BFF\n10-15%\nScrolling buzzwords\n\n\nFaint Gray\n#333333\n8-12%\nScrolling equations"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#typography",
+    "href": "STYLE_GUIDE.html#typography",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": "/* Primary font - clean, professional */\nfont-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;\n\n/* Code/equations font */\nfont-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;\n\n\n\n\n\n\nElement\nSize\nWeight\nLine Height\n\n\n\n\nHero Name\n4rem (64px)\n700 (Bold)\n1.1\n\n\nH1\n2.5rem (40px)\n600 (Semi-bold)\n1.2\n\n\nH2\n2rem (32px)\n600 (Semi-bold)\n1.3\n\n\nH3\n1.5rem (24px)\n500 (Medium)\n1.4\n\n\nBody\n1rem (16px)\n400 (Regular)\n1.6\n\n\nSmall\n0.875rem (14px)\n400 (Regular)\n1.5\n\n\nScrolling BG\n1.25rem (20px)\n300 (Light)\n1.0"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#hero-section-specifications",
+    "href": "STYLE_GUIDE.html#hero-section-specifications",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": "Height: 100vh (full viewport) or min-height 600px\nDisplay: Flexbox, centered horizontally and vertically\nPosition: Relative (for background layer)\n\n\n\n\n.hero-name {\n  font-size: 4rem;\n  font-weight: 700;\n  color: #007BFF;\n  text-align: center;\n  z-index: 10;\n  position: relative;\n}\n\n\n\nThe hero section features economics/econometrics terms and equations scrolling horizontally in faint colors behind the main content.\nBuzzwords to include: - ECONOMETRICS - DATA ANALYSIS - STATISTICAL MODELING - TIME SERIES ANALYSIS - REGRESSION - ECONOMIC POLICY - MARKET ANALYSIS - VISUALIZATION - POLICY RESEARCH - ECONOMIC THEORY - QUANTITATIVE METHODS - R&D - LATEX - EXCEL - VEGA-LITE\nEquations to include: - Y = α + βX + ε - E[Y|X] = β₀ + β₁X - ΔY/ΔX = β - R² = 1 - SSres/SStot - σ² = Σ(xᵢ - μ)²/n - GDP = C + I + G + (X-M)\nAnimation CSS:\n.scrolling-row {\n  display: flex;\n  white-space: nowrap;\n  animation: scroll-left 30s linear infinite;\n}\n\n.scrolling-row.reverse {\n  animation: scroll-right 25s linear infinite;\n}\n\n@keyframes scroll-left {\n  0% { transform: translateX(0); }\n  100% { transform: translateX(-50%); }\n}\n\n@keyframes scroll-right {\n  0% { transform: translateX(-50%); }\n  100% { transform: translateX(0); }\n}\n\n.scrolling-text {\n  color: rgba(0, 123, 255, 0.12);\n  font-size: 1.25rem;\n  font-weight: 300;\n  padding: 0 2rem;\n  text-transform: uppercase;\n  letter-spacing: 0.1em;\n}"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#substack-carousel",
+    "href": "STYLE_GUIDE.html#substack-carousel",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": "Width: 100%\nPadding: 4rem 2rem\nBackground: #f5f5f5 (light gray)\nOverflow: Hidden (with horizontal scroll for cards)\n\n\n\n\n.substack-card {\n  min-width: 300px;\n  max-width: 350px;\n  background: #FFFFFF;\n  border-radius: 8px;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);\n  padding: 1.5rem;\n  margin-right: 1.5rem;\n  transition: transform 0.2s ease, box-shadow 0.2s ease;\n}\n\n.substack-card:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);\n}\n\n\n\n\nTitle: H3, #1a1a1a, 1.25rem, font-weight 600\nDate: Small text, #666666, 0.875rem\nPreview: Body text, #333333, 2-3 lines max with ellipsis\nRead More Link: #007BFF, hover underline"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#about-me-section",
+    "href": "STYLE_GUIDE.html#about-me-section",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": "Two-column on desktop: Text left (60%), Image right (40%)\nSingle column on mobile: Image on top, text below\nMax-width: 1200px\nPadding: 5rem 2rem\n\n\n\n\n.about-image {\n  border-radius: 8px;\n  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);\n  max-width: 100%;\n  height: auto;\n}\n\n\n\n\nDisplay logos of LSE, Bank for International Settlements, Howard University, etc.\nGrid layout: 3-4 columns on desktop\nGrayscale by default, color on hover (optional)"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#project-cards",
+    "href": "STYLE_GUIDE.html#project-cards",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": ".projects-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\n  gap: 2rem;\n  padding: 2rem;\n}\n\n\n\n.project-card {\n  background: #FFFFFF;\n  border-radius: 12px;\n  overflow: hidden;\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);\n  transition: transform 0.3s ease;\n}\n\n.project-card:hover {\n  transform: translateY(-8px);\n}\n\n.project-card-image {\n  width: 100%;\n  height: 200px;\n  object-fit: cover;\n}\n\n.project-card-content {\n  padding: 1.5rem;\n}"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#buttons-and-links",
+    "href": "STYLE_GUIDE.html#buttons-and-links",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": ".btn-primary {\n  background-color: #007BFF;\n  color: #FFFFFF;\n  padding: 0.75rem 1.5rem;\n  border-radius: 6px;\n  font-weight: 500;\n  border: none;\n  cursor: pointer;\n  transition: background-color 0.2s ease;\n}\n\n.btn-primary:hover {\n  background-color: #0056b3;\n}\n\n\n\na {\n  color: #007BFF;\n  text-decoration: none;\n  transition: color 0.2s ease;\n}\n\na:hover {\n  color: #0056b3;\n  text-decoration: underline;\n}"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#social-icons",
+    "href": "STYLE_GUIDE.html#social-icons",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": ".social-icon {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  width: 44px;\n  height: 44px;\n  border-radius: 50%;\n  background-color: #007BFF;\n  color: #FFFFFF;\n  margin: 0 0.5rem;\n  transition: background-color 0.2s ease, transform 0.2s ease;\n}\n\n.social-icon:hover {\n  background-color: #0056b3;\n  transform: scale(1.1);\n}"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#spacing-system",
+    "href": "STYLE_GUIDE.html#spacing-system",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": "Use consistent spacing based on 8px increments:\n\n\n\nName\nValue\nUsage\n\n\n\n\nxs\n4px\nTight spacing\n\n\nsm\n8px\nCompact elements\n\n\nmd\n16px\nDefault spacing\n\n\nlg\n24px\nSection padding\n\n\nxl\n32px\nLarge gaps\n\n\n2xl\n48px\nSection margins\n\n\n3xl\n64px\nMajor sections"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#breakpoints",
+    "href": "STYLE_GUIDE.html#breakpoints",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": "/* Mobile first approach */\n/* Small devices (phones) */\n@media (min-width: 576px) { }\n\n/* Medium devices (tablets) */\n@media (min-width: 768px) { }\n\n/* Large devices (desktops) */\n@media (min-width: 992px) { }\n\n/* Extra large devices */\n@media (min-width: 1200px) { }"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#image-guidelines",
+    "href": "STYLE_GUIDE.html#image-guidelines",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": "images/\n├── index_images/\n│   ├── portrait.png      # Main profile photo (recommended: 800x800px)\n│   └── hero-bg.png       # Optional hero background\n├── project_images/\n│   ├── project-1.png     # Project thumbnails (recommended: 600x400px)\n│   └── project-2.png\n└── logos/\n    ├── lse.png           # Institution logos\n    ├── bis.png\n    └── substack.png\n\n\n\n\nProfile Photo: 800x800px minimum, PNG or JPG, &lt; 200KB\nProject Thumbnails: 600x400px (3:2 ratio), PNG or JPG, &lt; 150KB\nLogos: PNG with transparency, max height 60px for display"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#accessibility",
+    "href": "STYLE_GUIDE.html#accessibility",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": "Maintain color contrast ratio of at least 4.5:1 for text\nAll images must have descriptive alt text\nInteractive elements must have :focus states\nUse semantic HTML elements\nEnsure keyboard navigation works throughout"
+  },
+  {
+    "objectID": "STYLE_GUIDE.html#animation-guidelines",
+    "href": "STYLE_GUIDE.html#animation-guidelines",
+    "title": "Myles Owens Website - Style Guide",
+    "section": "",
+    "text": "Keep animations subtle and purposeful\nDefault duration: 200-300ms for UI transitions\nUse ease or ease-out timing functions\nScrolling background: slower (20-30s) for ambient effect\nRespect prefers-reduced-motion media query"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "CLAUDE.html",
+    "href": "CLAUDE.html",
+    "title": "Myles Owens Personal Website",
+    "section": "",
+    "text": "This is a personal portfolio website for Myles Owens, an LSE MPA student specializing in Economic Policy. The site showcases projects, links to professional profiles, and features blog content from Substack.\nLive URL: https://mowens117.github.io/\n\n\n\n\nFramework: Quarto - Scientific and technical publishing system\nFile Format: .qmd (Quarto Markdown)\nStyling: Custom CSS (styles.css)\nBuild: Quarto renders to static HTML\nHosting: GitHub Pages\n\n\n\n\nmylesowens/\n├── _quarto.yml          # Quarto project configuration\n├── index.qmd            # Homepage with hero, carousel, about sections\n├── about.qmd            # Detailed about page\n├── projects.qmd         # Portfolio/projects page (to be created)\n├── styles.css           # Custom CSS styles\n├── CLAUDE.md            # This file - AI assistant documentation\n├── STYLE_GUIDE.md       # Visual design and branding guidelines\n├── images/\n│   ├── index_images/    # Hero and homepage images\n│   │   └── portrait.png # Profile photo\n│   ├── project_images/  # Project screenshots and graphics\n│   └── logos/           # Brand logos and icons\n├── _site/               # Generated output (gitignored)\n└── mylesowens.Rproj     # RStudio project file\n\n\n\n\n\n\nName “Myles Owens” centered in bright blue (#007BFF)\nBackground: Economics/econometrics buzzwords and equations scrolling horizontally\nFaint text colors for background elements\nClean, professional appearance\n\n\n\n\n\nDisplays recent posts from https://mylesowens.substack.com/\nHorizontal scrolling carousel\nShows post titles, dates, and preview text\nLinks directly to Substack posts\n\n\n\n\n\nBrief professional bio\nCurrent status: LSE MPA student, Economic Policy\nBackground: Economist, “economics storyteller”, data visualization\nPrevious work: Bank for International Settlements (Project Agorà), Bank of England collaboration\n\n\n\n\n\nGrid/card layout for projects\nEach project shows title, description, tech used, and link\nFilterable by category (optional)\n\n\n\n\n\nLinkedIn: https://www.linkedin.com/in/myles-owens/\nSubstack: https://mylesowens.substack.com/\nGitHub: (if applicable)\n\n\n\n\n\n# Preview site locally\nquarto preview\n\n# Render site to _site/ directory\nquarto render\n\n# Render specific file\nquarto render index.qmd\n\n\n\nThe _quarto.yml file controls: - Site title and navigation - Theme (using Cosmo + custom brand) - CSS includes - Table of contents settings - Output format\n\n\n\nSee STYLE_GUIDE.md for detailed styling guidelines.\nKey CSS classes to implement: - .hero-section - Main hero container - .hero-name - Centered name with bright blue color - .scrolling-bg - Animated background text - .substack-carousel - Carousel container - .about-section - About me styling - .project-card - Portfolio item cards\n\n\n\n\nQuarto Syntax: Use Quarto markdown (.qmd) syntax, not plain HTML where possible\nYAML Headers: Each .qmd file needs proper YAML front matter\nCustom HTML: For complex layouts (hero, carousel), use raw HTML blocks in Quarto\nCSS Animations: Background scrolling uses CSS keyframe animations\nResponsive Design: Ensure mobile-friendly layouts\nImage Optimization: Keep images web-optimized (compress PNGs/JPGs)\n\n\n\n\n\nQuarto CSS themes (Cosmo)\nOptional: Font Awesome for icons\nOptional: Google Fonts for typography\n\n\n\n\n\nPrimary Blue: #007BFF (hero name, links, accents)\nBackground Faint: rgba(0, 123, 255, 0.1) (scrolling text)\nText Dark: #333333\nText Light: #666666\nBackground: #FFFFFF\n\n\n\n\n\nHero with name and scrolling background\nSubstack carousel (recent posts)\nAbout Me section\nProjects/Portfolio grid\nContact/Social links footer"
+  },
+  {
+    "objectID": "CLAUDE.html#project-overview",
+    "href": "CLAUDE.html#project-overview",
+    "title": "Myles Owens Personal Website",
+    "section": "",
+    "text": "This is a personal portfolio website for Myles Owens, an LSE MPA student specializing in Economic Policy. The site showcases projects, links to professional profiles, and features blog content from Substack.\nLive URL: https://mowens117.github.io/"
+  },
+  {
+    "objectID": "CLAUDE.html#tech-stack",
+    "href": "CLAUDE.html#tech-stack",
+    "title": "Myles Owens Personal Website",
+    "section": "",
+    "text": "Framework: Quarto - Scientific and technical publishing system\nFile Format: .qmd (Quarto Markdown)\nStyling: Custom CSS (styles.css)\nBuild: Quarto renders to static HTML\nHosting: GitHub Pages"
+  },
+  {
+    "objectID": "CLAUDE.html#project-structure",
+    "href": "CLAUDE.html#project-structure",
+    "title": "Myles Owens Personal Website",
+    "section": "",
+    "text": "mylesowens/\n├── _quarto.yml          # Quarto project configuration\n├── index.qmd            # Homepage with hero, carousel, about sections\n├── about.qmd            # Detailed about page\n├── projects.qmd         # Portfolio/projects page (to be created)\n├── styles.css           # Custom CSS styles\n├── CLAUDE.md            # This file - AI assistant documentation\n├── STYLE_GUIDE.md       # Visual design and branding guidelines\n├── images/\n│   ├── index_images/    # Hero and homepage images\n│   │   └── portrait.png # Profile photo\n│   ├── project_images/  # Project screenshots and graphics\n│   └── logos/           # Brand logos and icons\n├── _site/               # Generated output (gitignored)\n└── mylesowens.Rproj     # RStudio project file"
+  },
+  {
+    "objectID": "CLAUDE.html#key-features",
+    "href": "CLAUDE.html#key-features",
+    "title": "Myles Owens Personal Website",
+    "section": "",
+    "text": "Name “Myles Owens” centered in bright blue (#007BFF)\nBackground: Economics/econometrics buzzwords and equations scrolling horizontally\nFaint text colors for background elements\nClean, professional appearance\n\n\n\n\n\nDisplays recent posts from https://mylesowens.substack.com/\nHorizontal scrolling carousel\nShows post titles, dates, and preview text\nLinks directly to Substack posts\n\n\n\n\n\nBrief professional bio\nCurrent status: LSE MPA student, Economic Policy\nBackground: Economist, “economics storyteller”, data visualization\nPrevious work: Bank for International Settlements (Project Agorà), Bank of England collaboration\n\n\n\n\n\nGrid/card layout for projects\nEach project shows title, description, tech used, and link\nFilterable by category (optional)\n\n\n\n\n\nLinkedIn: https://www.linkedin.com/in/myles-owens/\nSubstack: https://mylesowens.substack.com/\nGitHub: (if applicable)"
+  },
+  {
+    "objectID": "CLAUDE.html#development-commands",
+    "href": "CLAUDE.html#development-commands",
+    "title": "Myles Owens Personal Website",
+    "section": "",
+    "text": "# Preview site locally\nquarto preview\n\n# Render site to _site/ directory\nquarto render\n\n# Render specific file\nquarto render index.qmd"
+  },
+  {
+    "objectID": "CLAUDE.html#quarto-configuration-notes",
+    "href": "CLAUDE.html#quarto-configuration-notes",
+    "title": "Myles Owens Personal Website",
+    "section": "",
+    "text": "The _quarto.yml file controls: - Site title and navigation - Theme (using Cosmo + custom brand) - CSS includes - Table of contents settings - Output format"
+  },
+  {
+    "objectID": "CLAUDE.html#css-architecture",
+    "href": "CLAUDE.html#css-architecture",
+    "title": "Myles Owens Personal Website",
+    "section": "",
+    "text": "See STYLE_GUIDE.md for detailed styling guidelines.\nKey CSS classes to implement: - .hero-section - Main hero container - .hero-name - Centered name with bright blue color - .scrolling-bg - Animated background text - .substack-carousel - Carousel container - .about-section - About me styling - .project-card - Portfolio item cards"
+  },
+  {
+    "objectID": "CLAUDE.html#important-notes-for-development",
+    "href": "CLAUDE.html#important-notes-for-development",
+    "title": "Myles Owens Personal Website",
+    "section": "",
+    "text": "Quarto Syntax: Use Quarto markdown (.qmd) syntax, not plain HTML where possible\nYAML Headers: Each .qmd file needs proper YAML front matter\nCustom HTML: For complex layouts (hero, carousel), use raw HTML blocks in Quarto\nCSS Animations: Background scrolling uses CSS keyframe animations\nResponsive Design: Ensure mobile-friendly layouts\nImage Optimization: Keep images web-optimized (compress PNGs/JPGs)"
+  },
+  {
+    "objectID": "CLAUDE.html#external-dependencies",
+    "href": "CLAUDE.html#external-dependencies",
+    "title": "Myles Owens Personal Website",
+    "section": "",
+    "text": "Quarto CSS themes (Cosmo)\nOptional: Font Awesome for icons\nOptional: Google Fonts for typography"
+  },
+  {
+    "objectID": "CLAUDE.html#brand-colors",
+    "href": "CLAUDE.html#brand-colors",
+    "title": "Myles Owens Personal Website",
+    "section": "",
+    "text": "Primary Blue: #007BFF (hero name, links, accents)\nBackground Faint: rgba(0, 123, 255, 0.1) (scrolling text)\nText Dark: #333333\nText Light: #666666\nBackground: #FFFFFF"
+  },
+  {
+    "objectID": "CLAUDE.html#content-sections-priority",
+    "href": "CLAUDE.html#content-sections-priority",
+    "title": "Myles Owens Personal Website",
+    "section": "",
+    "text": "Hero with name and scrolling background\nSubstack carousel (recent posts)\nAbout Me section\nProjects/Portfolio grid\nContact/Social links footer"
+  }
+]

@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<head>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
 
-<meta charset="utf-8" />
-<meta name="generator" content="quarto-1.6.42" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>mylesowens</title>
+<title>claude – mylesowens</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,7 +56,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
-<!-- htmldependencies:E3FAD763 -->
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,34 +102,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="/index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">mylesowens</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-  aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation"
-  onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="/index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -130,47 +142,186 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <div id="quarto-toc-target"></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#myles-owens-personal-website" id="toc-myles-owens-personal-website" class="nav-link active" data-scroll-target="#myles-owens-personal-website">Myles Owens Personal Website</a>
+  <ul class="collapse">
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#tech-stack" id="toc-tech-stack" class="nav-link" data-scroll-target="#tech-stack">Tech Stack</a></li>
+  <li><a href="#project-structure" id="toc-project-structure" class="nav-link" data-scroll-target="#project-structure">Project Structure</a></li>
+  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a>
+  <ul class="collapse">
+  <li><a href="#hero-section" id="toc-hero-section" class="nav-link" data-scroll-target="#hero-section">1. Hero Section</a></li>
+  <li><a href="#substack-carousel" id="toc-substack-carousel" class="nav-link" data-scroll-target="#substack-carousel">2. Substack Carousel</a></li>
+  <li><a href="#about-me-section" id="toc-about-me-section" class="nav-link" data-scroll-target="#about-me-section">3. About Me Section</a></li>
+  <li><a href="#portfolio-section" id="toc-portfolio-section" class="nav-link" data-scroll-target="#portfolio-section">4. Portfolio Section</a></li>
+  <li><a href="#social-links" id="toc-social-links" class="nav-link" data-scroll-target="#social-links">5. Social Links</a></li>
+  </ul></li>
+  <li><a href="#development-commands" id="toc-development-commands" class="nav-link" data-scroll-target="#development-commands">Development Commands</a></li>
+  <li><a href="#quarto-configuration-notes" id="toc-quarto-configuration-notes" class="nav-link" data-scroll-target="#quarto-configuration-notes">Quarto Configuration Notes</a></li>
+  <li><a href="#css-architecture" id="toc-css-architecture" class="nav-link" data-scroll-target="#css-architecture">CSS Architecture</a></li>
+  <li><a href="#important-notes-for-development" id="toc-important-notes-for-development" class="nav-link" data-scroll-target="#important-notes-for-development">Important Notes for Development</a></li>
+  <li><a href="#external-dependencies" id="toc-external-dependencies" class="nav-link" data-scroll-target="#external-dependencies">External Dependencies</a></li>
+  <li><a href="#brand-colors" id="toc-brand-colors" class="nav-link" data-scroll-target="#brand-colors">Brand Colors</a></li>
+  <li><a href="#content-sections-priority" id="toc-content-sections-priority" class="nav-link" data-scroll-target="#content-sections-priority">Content Sections Priority</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">mylesowens</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
+<section id="myles-owens-personal-website" class="level1">
+<h1>Myles Owens Personal Website</h1>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>This is a personal portfolio website for Myles Owens, an LSE MPA student specializing in Economic Policy. The site showcases projects, links to professional profiles, and features blog content from Substack.</p>
+<p><strong>Live URL:</strong> https://mowens117.github.io/</p>
+</section>
+<section id="tech-stack" class="level2">
+<h2 class="anchored" data-anchor-id="tech-stack">Tech Stack</h2>
+<ul>
+<li><strong>Framework:</strong> <a href="https://quarto.org/">Quarto</a> - Scientific and technical publishing system</li>
+<li><strong>File Format:</strong> <code>.qmd</code> (Quarto Markdown)</li>
+<li><strong>Styling:</strong> Custom CSS (<code>styles.css</code>)</li>
+<li><strong>Build:</strong> Quarto renders to static HTML</li>
+<li><strong>Hosting:</strong> GitHub Pages</li>
+</ul>
+</section>
+<section id="project-structure" class="level2">
+<h2 class="anchored" data-anchor-id="project-structure">Project Structure</h2>
+<pre><code>mylesowens/
+├── _quarto.yml          # Quarto project configuration
+├── index.qmd            # Homepage with hero, carousel, about sections
+├── about.qmd            # Detailed about page
+├── projects.qmd         # Portfolio/projects page (to be created)
+├── styles.css           # Custom CSS styles
+├── CLAUDE.md            # This file - AI assistant documentation
+├── STYLE_GUIDE.md       # Visual design and branding guidelines
+├── images/
+│   ├── index_images/    # Hero and homepage images
+│   │   └── portrait.png # Profile photo
+│   ├── project_images/  # Project screenshots and graphics
+│   └── logos/           # Brand logos and icons
+├── _site/               # Generated output (gitignored)
+└── mylesowens.Rproj     # RStudio project file</code></pre>
+</section>
+<section id="key-features" class="level2">
+<h2 class="anchored" data-anchor-id="key-features">Key Features</h2>
+<section id="hero-section" class="level3">
+<h3 class="anchored" data-anchor-id="hero-section">1. Hero Section</h3>
+<ul>
+<li>Name “Myles Owens” centered in bright blue (#007BFF)</li>
+<li>Background: Economics/econometrics buzzwords and equations scrolling horizontally</li>
+<li>Faint text colors for background elements</li>
+<li>Clean, professional appearance</li>
+</ul>
+</section>
+<section id="substack-carousel" class="level3">
+<h3 class="anchored" data-anchor-id="substack-carousel">2. Substack Carousel</h3>
+<ul>
+<li>Displays recent posts from https://mylesowens.substack.com/</li>
+<li>Horizontal scrolling carousel</li>
+<li>Shows post titles, dates, and preview text</li>
+<li>Links directly to Substack posts</li>
+</ul>
+</section>
+<section id="about-me-section" class="level3">
+<h3 class="anchored" data-anchor-id="about-me-section">3. About Me Section</h3>
+<ul>
+<li>Brief professional bio</li>
+<li>Current status: LSE MPA student, Economic Policy</li>
+<li>Background: Economist, “economics storyteller”, data visualization</li>
+<li>Previous work: Bank for International Settlements (Project Agorà), Bank of England collaboration</li>
+</ul>
+</section>
+<section id="portfolio-section" class="level3">
+<h3 class="anchored" data-anchor-id="portfolio-section">4. Portfolio Section</h3>
+<ul>
+<li>Grid/card layout for projects</li>
+<li>Each project shows title, description, tech used, and link</li>
+<li>Filterable by category (optional)</li>
+</ul>
+</section>
+<section id="social-links" class="level3">
+<h3 class="anchored" data-anchor-id="social-links">5. Social Links</h3>
+<ul>
+<li>LinkedIn: https://www.linkedin.com/in/myles-owens/</li>
+<li>Substack: https://mylesowens.substack.com/</li>
+<li>GitHub: (if applicable)</li>
+</ul>
+</section>
+</section>
+<section id="development-commands" class="level2">
+<h2 class="anchored" data-anchor-id="development-commands">Development Commands</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Preview site locally</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Render site to _site/ directory</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Render specific file</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render index.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="quarto-configuration-notes" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-configuration-notes">Quarto Configuration Notes</h2>
+<p>The <code>_quarto.yml</code> file controls: - Site title and navigation - Theme (using Cosmo + custom brand) - CSS includes - Table of contents settings - Output format</p>
+</section>
+<section id="css-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="css-architecture">CSS Architecture</h2>
+<p>See <code>STYLE_GUIDE.md</code> for detailed styling guidelines.</p>
+<p>Key CSS classes to implement: - <code>.hero-section</code> - Main hero container - <code>.hero-name</code> - Centered name with bright blue color - <code>.scrolling-bg</code> - Animated background text - <code>.substack-carousel</code> - Carousel container - <code>.about-section</code> - About me styling - <code>.project-card</code> - Portfolio item cards</p>
+</section>
+<section id="important-notes-for-development" class="level2">
+<h2 class="anchored" data-anchor-id="important-notes-for-development">Important Notes for Development</h2>
+<ol type="1">
+<li><strong>Quarto Syntax:</strong> Use Quarto markdown (<code>.qmd</code>) syntax, not plain HTML where possible</li>
+<li><strong>YAML Headers:</strong> Each <code>.qmd</code> file needs proper YAML front matter</li>
+<li><strong>Custom HTML:</strong> For complex layouts (hero, carousel), use raw HTML blocks in Quarto</li>
+<li><strong>CSS Animations:</strong> Background scrolling uses CSS keyframe animations</li>
+<li><strong>Responsive Design:</strong> Ensure mobile-friendly layouts</li>
+<li><strong>Image Optimization:</strong> Keep images web-optimized (compress PNGs/JPGs)</li>
+</ol>
+</section>
+<section id="external-dependencies" class="level2">
+<h2 class="anchored" data-anchor-id="external-dependencies">External Dependencies</h2>
+<ul>
+<li>Quarto CSS themes (Cosmo)</li>
+<li>Optional: Font Awesome for icons</li>
+<li>Optional: Google Fonts for typography</li>
+</ul>
+</section>
+<section id="brand-colors" class="level2">
+<h2 class="anchored" data-anchor-id="brand-colors">Brand Colors</h2>
+<ul>
+<li><strong>Primary Blue:</strong> #007BFF (hero name, links, accents)</li>
+<li><strong>Background Faint:</strong> rgba(0, 123, 255, 0.1) (scrolling text)</li>
+<li><strong>Text Dark:</strong> #333333</li>
+<li><strong>Text Light:</strong> #666666</li>
+<li><strong>Background:</strong> #FFFFFF</li>
+</ul>
+</section>
+<section id="content-sections-priority" class="level2">
+<h2 class="anchored" data-anchor-id="content-sections-priority">Content Sections Priority</h2>
+<ol type="1">
+<li>Hero with name and scrolling background</li>
+<li>Substack carousel (recent posts)</li>
+<li>About Me section</li>
+<li>Projects/Portfolio grid</li>
+<li>Contact/Social links footer</li>
+</ol>
 
 
-</header>
-
-
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<div class="cell">
-<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
-<div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">mylesowens</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">mylesowens</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6SG9tZQ==">Home</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2luZGV4Lmh0bWw=">/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6QWJvdXQ=">About</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2Fib3V0Lmh0bWw=">/about.html</span></p>
-</div>
-<div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">mylesowens</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">mylesowens</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">mylesowens</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">mylesowens</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw=="></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj"></span></p>
-</div>
+</section>
+</section>
 
 </main> <!-- /main -->
-<script id = "quarto-html-after-body" type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -589,6 +740,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 </div> <!-- /content -->
 
-</body>
 
-</html>
+
+
+</body></html>
