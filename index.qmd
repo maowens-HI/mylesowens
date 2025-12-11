@@ -4,27 +4,27 @@ page-layout: full
 toc: false
 ---
 
-::::::: hero-section
-::::: scrolling-bg
-::: scrolling-row
-ECONOMETRICS · DATA ANALYSIS · Y = α + βX + ε · STATISTICAL MODELING · E\[Y\|X\] = β₀ + β₁X · TIME SERIES ANALYSIS · REGRESSION · ΔY/ΔX = β · ECONOMIC POLICY · MARKET ANALYSIS · R² = 1 - SSres/SStot · VISUALIZATION · POLICY RESEARCH · σ² = Σ(xᵢ - μ)²/n · ECONOMIC THEORY · QUANTITATIVE METHODS · GDP = C + I + G + (X-M) · R&D · LATEX · EXCEL · VEGA-LITE
-:::
-
-::: {.scrolling-row .reverse}
-VEGA-LITE · EXCEL · LATEX · R&D · GDP = C + I + G + (X-M) · QUANTITATIVE METHODS · ECONOMIC THEORY · σ² = Σ(xᵢ - μ)²/n · POLICY RESEARCH · VISUALIZATION · R² = 1 - SSres/SStot · MARKET ANALYSIS · ECONOMIC POLICY · ΔY/ΔX = β · REGRESSION · TIME SERIES ANALYSIS · E\[Y\|X\] = β₀ + β₁X · STATISTICAL MODELING · Y = α + βX + ε · DATA ANALYSIS · ECONOMETRICS
-:::
-:::::
-
-::: hero-name
-Myles Owens
-:::
-:::::::
+```{=html}
+<div class="hero-section">
+  <div class="scrolling-bg">
+    <div class="scrolling-row">
+      <span>ECONOMETRICS · DATA ANALYSIS · Y = α + βX + ε · STATISTICAL MODELING · E[Y|X] = β₀ + β₁X · TIME SERIES ANALYSIS · REGRESSION · ΔY/ΔX = β · ECONOMIC POLICY · MARKET ANALYSIS · R² = 1 - SSres/SStot · VISUALIZATION · POLICY RESEARCH · σ² = Σ(xᵢ - μ)²/n · ECONOMIC THEORY · QUANTITATIVE METHODS · GDP = C + I + G + (X-M) · R&D · LATEX · EXCEL · VEGA-LITE · </span>
+      <span>ECONOMETRICS · DATA ANALYSIS · Y = α + βX + ε · STATISTICAL MODELING · E[Y|X] = β₀ + β₁X · TIME SERIES ANALYSIS · REGRESSION · ΔY/ΔX = β · ECONOMIC POLICY · MARKET ANALYSIS · R² = 1 - SSres/SStot · VISUALIZATION · POLICY RESEARCH · σ² = Σ(xᵢ - μ)²/n · ECONOMIC THEORY · QUANTITATIVE METHODS · GDP = C + I + G + (X-M) · R&D · LATEX · EXCEL · VEGA-LITE · </span>
+    </div>
+    <div class="scrolling-row reverse">
+      <span>VEGA-LITE · EXCEL · LATEX · R&D · GDP = C + I + G + (X-M) · QUANTITATIVE METHODS · ECONOMIC THEORY · σ² = Σ(xᵢ - μ)²/n · POLICY RESEARCH · VISUALIZATION · R² = 1 - SSres/SStot · MARKET ANALYSIS · ECONOMIC POLICY · ΔY/ΔX = β · REGRESSION · TIME SERIES ANALYSIS · E[Y|X] = β₀ + β₁X · STATISTICAL MODELING · Y = α + βX + ε · DATA ANALYSIS · ECONOMETRICS · </span>
+      <span>VEGA-LITE · EXCEL · LATEX · R&D · GDP = C + I + G + (X-M) · QUANTITATIVE METHODS · ECONOMIC THEORY · σ² = Σ(xᵢ - μ)²/n · POLICY RESEARCH · VISUALIZATION · R² = 1 - SSres/SStot · MARKET ANALYSIS · ECONOMIC POLICY · ΔY/ΔX = β · REGRESSION · TIME SERIES ANALYSIS · E[Y|X] = β₀ + β₁X · STATISTICAL MODELING · Y = α + βX + ε · DATA ANALYSIS · ECONOMETRICS · </span>
+    </div>
+  </div>
+  <div class="hero-name">Myles Owens</div>
+</div>
+```
 
 ------------------------------------------------------------------------
 
 ## About Me {.about-section}
 
-I'm an **MPA student at the London School of Economics**, specializing in **Economic Policy**. My work sits at the intersection of economics, data storytelling, and visualization—I believe complex economic concepts should be accessible and engaging.
+I'm a **Research Analyst at the Hoover Institution's State and Local Governance Initiative** at Stanford University. I studied **Economic Policy at the London School of Economics**. My work sits at the intersection of economics, data storytelling, and visualization—I believe complex economic concepts should be accessible and engaging.
 
 ### Background
 
@@ -32,52 +32,48 @@ I'm an **MPA student at the London School of Economics**, specializing in **Econ
 -   **Data Visualization Specialist** - Creating clear, impactful visualizations using modern tools
 -   **Policy Researcher** - Contributing to innovative projects in digital finance and economic analysis
 
-### Connect
-
-I write regularly on economics, policy, and data visualization:
-
--   [**Substack**](https://mylesowens.substack.com/) - Long-form essays on economic policy and analysis
--   [**LinkedIn**](https://www.linkedin.com/in/myles-owens/) - Professional updates and network
-
 ------------------------------------------------------------------------
 
 ## Recent Writing
 
-::: substack-carousel
+```{=html}
+<div class="substack-carousel">
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
 
   <div class="substack-card">
-    <h3>The Future of Money</h3>
-    <div class="date">Oct 12, 2024</div>
-    <p>Exploring the implications of Project Agorà and wholesale central bank digital currencies.</p>
-    <a href="https://mylesowens.substack.com/" target="_blank">Read Article →</a>
+    <h3>London's Smartphone Snatching Surge</h3>
+    <div class="date">2024</div>
+    <p>Examining the rise in smartphone theft across London and the economic and social factors driving this urban crime trend.</p>
+    <a href="https://mylesowens.substack.com/p/londons-smartphone-snatching-surge" target="_blank">Read Article →</a>
   </div>
 
   <div class="substack-card">
-    <h3>Visualizing Inflation</h3>
-    <div class="date">Sep 28, 2024</div>
-    <p>How data storytelling can change the way we understand purchasing power and CPI changes.</p>
-    <a href="https://mylesowens.substack.com/" target="_blank">Read Article →</a>
+    <h3>Trump's War on New Digital Dollars</h3>
+    <div class="date">Feb 18, 2024</div>
+    <p>CBDC, Financial Freedom's Foe? Examining why Trump's anti-CBDC stance resonates with supporters and whether fears about digital currency surveillance are founded.</p>
+    <a href="https://mylesowens.substack.com/p/trumps-war-on-new-digital-dollars" target="_blank">Read Article →</a>
   </div>
 
   <div class="substack-card">
-    <h3>Digital Finance Trends</h3>
-    <div class="date">Aug 15, 2024</div>
-    <p>A deep dive into the latest research from the Bank for International Settlements.</p>
-    <a href="https://mylesowens.substack.com/" target="_blank">Read Article →</a>
+    <h3>Race, Riches, and Crypto</h3>
+    <div class="date">Jan 19, 2024</div>
+    <p>A New Frontier or the Same Old Divide? Exploring cryptocurrency's potential—and limitations—as a solution for financial inclusion among marginalized communities.</p>
+    <a href="https://mylesowens.substack.com/p/race-riches-and-crypto" target="_blank">Read Article →</a>
   </div>
 
 </div>
-:::
+</div>
+```
 
 ------------------------------------------------------------------------
 
 ## Projects
 
-::: projects-section
-The following projects showcase my work in data visualization, economic analysis, and policy research.
+```{=html}
+<div class="projects-section">
+<p>The following projects showcase my work in data visualization, economic analysis, and policy research.</p>
 
-::: projects-grid
+<div class="projects-grid">
 
   <div class="project-card">
     <img src="https://placehold.co/600x400/e7f1ff/0066cc?text=CBDC+Dashboard" alt="CBDC Dashboard" class="project-card-image" style="width:100%; height:200px; object-fit:cover;">
@@ -106,21 +102,32 @@ The following projects showcase my work in data visualization, economic analysis
     </div>
   </div>
 
-:::
-:::
+</div>
+</div>
+```
 
 ------------------------------------------------------------------------
 
 ## Technical Toolkit
 
-::: toolkit-section
-**Languages & Tools:** R, Python, LaTeX, Excel, Vega-Lite
-
-**Areas of Expertise:** - Econometric modeling and statistical analysis - Time series analysis and forecasting - Data visualization and dashboard design - Economic policy research - Quantitative methods for policy evaluation
-:::
+```{=html}
+<div class="toolkit-section">
+<p><strong>Languages & Tools:</strong> R, Python, LaTeX, Excel, Vega-Lite</p>
+<p><strong>Areas of Expertise:</strong></p>
+<ul>
+  <li>Econometric modeling and statistical analysis</li>
+  <li>Time series analysis and forecasting</li>
+  <li>Data visualization and dashboard design</li>
+  <li>Economic policy research</li>
+  <li>Quantitative methods for policy evaluation</li>
+</ul>
+</div>
+```
 
 ------------------------------------------------------------------------
 
-::: {style="text-align: center; padding: 2rem 0; color: #666666;"}
-<p>© 2024 Myles Owens · Built with [Quarto](https://quarto.org/) · Hosted on GitHub Pages</p>
-:::
+```{=html}
+<div style="text-align: center; padding: 2rem 0; color: #666666;">
+<p>© 2024 Myles Owens · Built with <a href="https://quarto.org/">Quarto</a> · Hosted on GitHub Pages</p>
+</div>
+```
