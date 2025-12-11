@@ -1,11 +1,90 @@
 ---
-title: "mylesowens"
+title: "Myles Owens"
+page-layout: full
+toc: false
 ---
 
-This is a Quarto website.
+::: {.hero-section}
+::: {.scrolling-bg}
+::: {.scrolling-row}
+ECONOMETRICS · DATA ANALYSIS · Y = α + βX + ε · STATISTICAL MODELING · E[Y|X] = β₀ + β₁X · TIME SERIES ANALYSIS · REGRESSION · ΔY/ΔX = β · ECONOMIC POLICY · MARKET ANALYSIS · R² = 1 - SSres/SStot · VISUALIZATION · POLICY RESEARCH · σ² = Σ(xᵢ - μ)²/n · ECONOMIC THEORY · QUANTITATIVE METHODS · GDP = C + I + G + (X-M) · R&D · LATEX · EXCEL · VEGA-LITE
+:::
+::: {.scrolling-row .reverse}
+VEGA-LITE · EXCEL · LATEX · R&D · GDP = C + I + G + (X-M) · QUANTITATIVE METHODS · ECONOMIC THEORY · σ² = Σ(xᵢ - μ)²/n · POLICY RESEARCH · VISUALIZATION · R² = 1 - SSres/SStot · MARKET ANALYSIS · ECONOMIC POLICY · ΔY/ΔX = β · REGRESSION · TIME SERIES ANALYSIS · E[Y|X] = β₀ + β₁X · STATISTICAL MODELING · Y = α + βX + ε · DATA ANALYSIS · ECONOMETRICS
+:::
+:::
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+::: {.hero-name}
+Myles Owens
+:::
+:::
 
-```{r}
-1 + 1
-```
+---
+
+## About Me {.about-section}
+
+I'm an **MPA student at the London School of Economics**, specializing in **Economic Policy**. My work sits at the intersection of economics, data storytelling, and visualization—I believe complex economic concepts should be accessible and engaging.
+
+### Background
+
+- **Economics Storyteller** - Translating data into narratives that inform policy decisions
+- **Data Visualization Specialist** - Creating clear, impactful visualizations using modern tools
+- **Policy Researcher** - Contributing to innovative projects in digital finance and economic analysis
+
+### Recent Work
+
+- **Bank for International Settlements** - Contributed to **Project Agorà**, exploring tokenization and wholesale central bank digital currencies
+- **Bank of England Collaboration** - Worked on cutting-edge research in digital finance
+- **Quantitative Analysis** - Experience with econometric modeling, time series analysis, and statistical methods
+
+### Connect
+
+I write regularly on economics, policy, and data visualization:
+
+- 📝 [**Substack**](https://mylesowens.substack.com/) - Long-form essays on economic policy and analysis
+- 💼 [**LinkedIn**](https://www.linkedin.com/in/myles-owens/) - Professional updates and network
+
+---
+
+## Recent Writing
+
+:::{.substack-carousel}
+*Recent posts from my Substack will appear here - currently being integrated*
+
+Visit [mylesowens.substack.com](https://mylesowens.substack.com/) to read my latest work on economic policy, data visualization, and research insights.
+:::
+
+---
+
+## Projects
+
+:::{.projects-section}
+*Portfolio projects showcasing data visualization, economic analysis, and policy research will be featured here.*
+
+This section is under development. Check back soon for:
+- **Economic visualizations** built with Vega-Lite and modern web tools
+- **Policy research** projects from LSE and previous work
+- **Data storytelling** examples demonstrating complex concepts
+:::
+
+---
+
+## Technical Toolkit
+
+:::{.toolkit-section}
+**Languages & Tools:** R, Python, LaTeX, Excel, Vega-Lite
+
+**Areas of Expertise:**
+- Econometric modeling and statistical analysis
+- Time series analysis and forecasting
+- Data visualization and dashboard design
+- Economic policy research
+- Quantitative methods for policy evaluation
+:::
+
+---
+
+<div style="text-align: center; padding: 2rem 0; color: #666666;">
+  <p>© 2024 Myles Owens · Built with [Quarto](https://quarto.org/) · Hosted on GitHub Pages</p>
+  <p><a href="https://maowens-hi.github.io/mylesowens/">maowens-hi.github.io/mylesowens</a></p>
+</div>

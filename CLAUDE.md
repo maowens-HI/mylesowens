@@ -4,7 +4,7 @@
 
 This is a personal portfolio website for Myles Owens, an LSE MPA student specializing in Economic Policy. The site showcases projects, links to professional profiles, and features blog content from Substack.
 
-**Live URL:** https://mowens117.github.io/
+**Live URL:** https://maowens-hi.github.io/mylesowens/
 
 ## Tech Stack
 
