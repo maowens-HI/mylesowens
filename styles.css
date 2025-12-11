@@ -247,7 +247,7 @@ h2 {
 
 .about-section, .projects-section, .toolkit-section {
   padding: 5rem 2rem;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -275,7 +275,7 @@ h2 {
 /* Substack Carousel Section */
 .substack-carousel {
   padding: 3rem 2rem;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
