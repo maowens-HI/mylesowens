@@ -9,6 +9,12 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+    right:
+      - text: Substack
+        href: https://mylesowens.substack.com/
+      - icon: linkedin
+        href: https://www.linkedin.com/in/myles-owens/
+        aria-label: LinkedIn
 
 format:
   html:
