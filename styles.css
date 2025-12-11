@@ -1,1 +1,425 @@
-/* css styles */
+/* ==========================================================================
+   Myles Owens Personal Website - Custom Styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Typography & Font Imports
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+
+:root {
+  /* Brand Colors */
+  --primary-blue: #007BFF;
+  --dark-blue: #0056b3;
+  --light-blue: #e7f1ff;
+
+  /* Neutral Colors */
+  --black: #1a1a1a;
+  --dark-gray: #333333;
+  --medium-gray: #666666;
+  --light-gray: #f5f5f5;
+  --white: #FFFFFF;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  color: var(--dark-gray);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--dark-blue);
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--white);
+  padding: 2rem;
+}
+
+.hero-name {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Scrolling Background */
+.scrolling-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.scrolling-row {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-left 40s linear infinite;
+  color: rgba(0, 123, 255, 0.12);
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  will-change: transform;
+}
+
+.scrolling-row.reverse {
+  animation: scroll-right 35s linear infinite;
+  color: rgba(51, 51, 51, 0.1);
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* Mobile responsive hero */
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 2.5rem;
+  }
+
+  .scrolling-row {
+    font-size: 1rem;
+  }
+}
+
+/* ==========================================================================
+   Section Styling
+   ========================================================================== */
+
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-3xl) var(--spacing-lg);
+}
+
+.about-section h2 {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+}
+
+.about-section h3 {
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-section li {
+  padding: var(--spacing-sm) 0;
+  line-height: 1.8;
+}
+
+.about-section strong {
+  color: var(--black);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Substack Carousel
+   ========================================================================== */
+
+.substack-carousel {
+  background: var(--light-gray);
+  padding: var(--spacing-3xl) var(--spacing-lg);
+  margin: var(--spacing-3xl) 0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.substack-card {
+  min-width: 300px;
+  max-width: 350px;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  margin-right: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.substack-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.substack-card h3 {
+  color: var(--black);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.substack-card .date {
+  color: var(--medium-gray);
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-md);
+}
+
+/* ==========================================================================
+   Projects Section
+   ========================================================================== */
+
+.projects-section {
+  max-width: 1200px;
+  margin: var(--spacing-3xl) auto;
+  padding: var(--spacing-lg);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: var(--spacing-xl);
+}
+
+.project-card {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+.project-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card-content {
+  padding: 1.5rem;
+}
+
+.project-card h3 {
+  color: var(--black);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.project-card p {
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+/* ==========================================================================
+   Toolkit Section
+   ========================================================================== */
+
+.toolkit-section {
+  max-width: 1200px;
+  margin: var(--spacing-3xl) auto;
+  padding: var(--spacing-lg);
+  background: var(--light-gray);
+  border-radius: 8px;
+}
+
+.toolkit-section strong {
+  color: var(--black);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Buttons and Interactive Elements
+   ========================================================================== */
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-blue);
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Social Icons
+   ========================================================================== */
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  margin: 0 0.5rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+  background-color: var(--dark-blue);
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--medium-gray);
+  font-size: 0.875rem;
+  border-top: 1px solid var(--light-gray);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+/* Small devices (phones) */
+@media (max-width: 576px) {
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .about-section,
+  .projects-section,
+  .toolkit-section {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+  .about-section h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) {
+  .hero-name {
+    font-size: 5rem;
+  }
+}
+
+/* ==========================================================================
+   Accessibility
+   ========================================================================== */
+
+/* Focus states for keyboard navigation */
+a:focus,
+button:focus,
+.btn-primary:focus {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.mb-3 {
+  margin-bottom: var(--spacing-xl);
+}
+
+.mt-2 {
+  margin-top: var(--spacing-lg);
+}
+
+.mt-3 {
+  margin-top: var(--spacing-xl);
+}
