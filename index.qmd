@@ -32,27 +32,42 @@ I'm an **MPA student at the London School of Economics**, specializing in **Econ
 -   **Data Visualization Specialist** - Creating clear, impactful visualizations using modern tools
 -   **Policy Researcher** - Contributing to innovative projects in digital finance and economic analysis
 
-### Recent Work
-
--   **Bank for International Settlements** - Contributed to **Project Agorà**, exploring tokenization and wholesale central bank digital currencies
--   **Bank of England Collaboration** - Worked on cutting-edge research in digital finance
--   **Quantitative Analysis** - Experience with econometric modeling, time series analysis, and statistical methods
-
 ### Connect
 
 I write regularly on economics, policy, and data visualization:
 
--   📝 [**Substack**](https://mylesowens.substack.com/) - Long-form essays on economic policy and analysis
--   💼 [**LinkedIn**](https://www.linkedin.com/in/myles-owens/) - Professional updates and network
+-   [**Substack**](https://mylesowens.substack.com/) - Long-form essays on economic policy and analysis
+-   [**LinkedIn**](https://www.linkedin.com/in/myles-owens/) - Professional updates and network
 
 ------------------------------------------------------------------------
 
 ## Recent Writing
 
 ::: substack-carousel
-*Recent posts from my Substack will appear here - currently being integrated*
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
 
-Visit [mylesowens.substack.com](https://mylesowens.substack.com/) to read my latest work on economic policy, data visualization, and research insights.
+  <div class="substack-card">
+    <h3>The Future of Money</h3>
+    <div class="date">Oct 12, 2024</div>
+    <p>Exploring the implications of Project Agorà and wholesale central bank digital currencies.</p>
+    <a href="https://mylesowens.substack.com/" target="_blank">Read Article →</a>
+  </div>
+
+  <div class="substack-card">
+    <h3>Visualizing Inflation</h3>
+    <div class="date">Sep 28, 2024</div>
+    <p>How data storytelling can change the way we understand purchasing power and CPI changes.</p>
+    <a href="https://mylesowens.substack.com/" target="_blank">Read Article →</a>
+  </div>
+
+  <div class="substack-card">
+    <h3>Digital Finance Trends</h3>
+    <div class="date">Aug 15, 2024</div>
+    <p>A deep dive into the latest research from the Bank for International Settlements.</p>
+    <a href="https://mylesowens.substack.com/" target="_blank">Read Article →</a>
+  </div>
+
+</div>
 :::
 
 ------------------------------------------------------------------------
@@ -60,9 +75,38 @@ Visit [mylesowens.substack.com](https://mylesowens.substack.com/) to read my lat
 ## Projects
 
 ::: projects-section
-*Portfolio projects showcasing data visualization, economic analysis, and policy research will be featured here.*
+The following projects showcase my work in data visualization, economic analysis, and policy research.
 
-This section is under development. Check back soon for: - **Economic visualizations** built with Vega-Lite and modern web tools - **Policy research** projects from LSE and previous work - **Data storytelling** examples demonstrating complex concepts
+::: projects-grid
+
+  <div class="project-card">
+    <img src="https://placehold.co/600x400/e7f1ff/0066cc?text=CBDC+Dashboard" alt="CBDC Dashboard" class="project-card-image" style="width:100%; height:200px; object-fit:cover;">
+    <div class="project-card-content">
+      <h3>CBDC Global Tracker</h3>
+      <p>An interactive dashboard tracking Central Bank Digital Currency projects worldwide, built with R Shiny and Vega-Lite.</p>
+      <a href="#" class="btn-primary">View Project</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="https://placehold.co/600x400/f3e5f5/8a2be2?text=Inflation+Analysis" alt="Inflation Analysis" class="project-card-image" style="width:100%; height:200px; object-fit:cover;">
+    <div class="project-card-content">
+      <h3>UK Inflation Analysis</h3>
+      <p>A comprehensive breakdown of CPI components post-2020, utilizing time-series analysis to forecast trends.</p>
+      <a href="#" class="btn-primary">View Analysis</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="https://placehold.co/600x400/e0f7fa/006064?text=Policy+Report" alt="Policy Report" class="project-card-image" style="width:100%; height:200px; object-fit:cover;">
+    <div class="project-card-content">
+      <h3>Digital Finance Policy</h3>
+      <p>Research paper regarding the regulatory framework of tokenized assets, drafted during my time at LSE.</p>
+      <a href="#" class="btn-primary">Read Paper</a>
+    </div>
+  </div>
+
+:::
 :::
 
 ------------------------------------------------------------------------
@@ -79,6 +123,4 @@ This section is under development. Check back soon for: - **Economic visualizati
 
 ::: {style="text-align: center; padding: 2rem 0; color: #666666;"}
 <p>© 2024 Myles Owens · Built with [Quarto](https://quarto.org/) · Hosted on GitHub Pages</p>
-
-<p><a href="https://maowens-hi.github.io/mylesowens/">maowens-hi.github.io/mylesowens</a></p>
 :::
