@@ -24,7 +24,7 @@ toc: false
 
 ## About Me {.about-section}
 
-I'm an **MPA student at the London School of Economics**, specializing in **Economic Policy**. My work sits at the intersection of economics, data storytelling, and visualization—I believe complex economic concepts should be accessible and engaging.
+I'm a **Research Analyst at the Hoover Institution's State and Local Governance Initiative** at Stanford University. I studied **Economic Policy at the London School of Economics**. My work sits at the intersection of economics, data storytelling, and visualization—I believe complex economic concepts should be accessible and engaging.
 
 ### Background
 
