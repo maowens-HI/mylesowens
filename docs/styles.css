@@ -1,1 +1,408 @@
-/* css styles */
+/* ==========================================================================
+   Myles Owens - "Clean Future" Light Theme
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;600&display=swap');
+
+:root {
+  /* Clean & Vibrant Palette */
+  --bg-gradient-start: #fdfbfb;
+  --bg-gradient-end: #ebedee;
+
+  --text-main: #1a1a1a;
+  --text-muted: #555555;
+
+  --brand-primary: #0066cc;
+  --brand-secondary: #8a2be2;
+
+  /* Glassmorphism Variables */
+  --card-bg: rgba(255, 255, 255, 0.65);
+  --card-border: rgba(255, 255, 255, 0.8);
+  --card-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  --card-hover-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.15);
+}
+
+body {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .hero-name {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--brand-secondary);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* Subtle mesh gradient background effect */
+  background:
+    radial-gradient(circle at 10% 20%, rgba(0, 123, 255, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(138, 43, 226, 0.1) 0%, transparent 20%);
+}
+
+/* The Name with Clean Gradient */
+.hero-name {
+  font-size: 6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  z-index: 10;
+  text-align: center;
+
+  /* Deep, rich gradient text */
+  background: linear-gradient(
+    120deg,
+    #0044cc,
+    #8a2be2,
+    #0044cc
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* The Scrolling Background - Clean Tech Look */
+.scrolling-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  opacity: 1;
+}
+
+.scrolling-row {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-left 40s linear infinite;
+  color: rgba(0, 0, 0, 0.06); /* Very subtle gray */
+  font-family: 'Space Grotesk', monospace;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  will-change: transform;
+}
+
+.scrolling-row.reverse {
+  animation: scroll-right 35s linear infinite;
+  color: rgba(0, 102, 204, 0.06); /* Very subtle blue */
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* ==========================================================================
+   Glassmorphism Cards (Light Mode)
+   ========================================================================== */
+
+.project-card, .substack-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-card:hover, .substack-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--card-hover-shadow);
+  background: rgba(255, 255, 255, 0.85); /* Whiter on hover */
+  border-color: #fff;
+}
+
+.project-card h3, .substack-card h3 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.project-card p, .substack-card p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Substack Card Styling */
+.substack-card {
+  min-width: 300px;
+  max-width: 350px;
+  padding: 1.5rem;
+}
+
+.substack-card .date {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+/* Project Card Styling */
+.project-card {
+  background: var(--card-bg);
+}
+
+.project-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card-content {
+  padding: 1.5rem;
+}
+
+.project-card h3 {
+  color: var(--text-main);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-block;
+  background: var(--brand-primary);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 50px; /* Pill shape */
+  font-weight: 600;
+  box-shadow: 0 4px 14px 0 rgba(0, 118, 255, 0.39);
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--brand-secondary);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(138, 43, 226, 0.23);
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Layout & Sections
+   ========================================================================== */
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #1a1a1a, #555);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.about-section, .projects-section, .toolkit-section {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-section li {
+  padding: 0.5rem 0;
+  line-height: 1.8;
+}
+
+.about-section strong {
+  font-weight: 600;
+}
+
+/* Substack Carousel Section */
+.substack-carousel {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Toolkit Section styling */
+.toolkit-section {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.toolkit-section strong {
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 3rem;
+  }
+
+  .scrolling-row {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .about-section, .projects-section, .toolkit-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .substack-card {
+    min-width: 280px;
+    max-width: 100%;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 576px) {
+  .hero-name {
+    font-size: 2.5rem;
+  }
+
+  .about-section, .projects-section, .toolkit-section {
+    padding: 2rem 1rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) {
+  .hero-name {
+    font-size: 6rem;
+  }
+}
+
+/* ==========================================================================
+   Accessibility
+   ========================================================================== */
+
+/* Focus states for keyboard navigation */
+a:focus,
+button:focus,
+.btn-primary:focus {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.mb-2 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 2rem;
+}
